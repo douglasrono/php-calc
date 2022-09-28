@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 <?php 
 
 $result = "";
@@ -20,11 +11,11 @@ class calculator
 
     var $b;
 
-    function checkopration($oprator)
+    function checkopration($operator)
 
     {
 
-        switch($oprator)
+        switch($operator)
 
         {
 
@@ -54,7 +45,7 @@ class calculator
 
             default:
 
-            return "Sorry No command found";
+            return "Invalid Operation";
 
         }   
 
@@ -68,7 +59,7 @@ class calculator
 
         $this->b = $b;
 
-        return $this->checkopration($c);
+        return $this->checkoperation($c);
 
     }
 
@@ -114,7 +105,7 @@ if(isset($_POST['submit']))
 
     <tr>
 
-        <td>Select Oprator</td>
+        <td>Select Operator</td>
 
         <td><select name="op">
 
